@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="5px" height="10px" viewBox="0 0 5 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title></title>
+    <desc>Created with Sketch.</desc>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-1341.000000, -958.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Hero-Section" transform="translate(-300.000000, -158.000000)">
+                <g id="Hero-Image">
+                    <g id="Carousel-Controls---White" transform="translate(1500.000000, 1099.927461)">
+                        <g id="Right-Arrow---White" transform="translate(122.689694, 0.000000)">
+                            <path d="M18.4495781,24.6779576 L18.4495781,17.3842186 C18.4495781,17.1392091 18.563296,16.9695873 18.7907315,16.8753531 C19.018167,16.7811189 19.2137618,16.8188125 19.3775154,16.9884343 L22.8982189,20.6353038 C23.007388,20.748385 23.0619726,20.8803133 23.0619726,21.0310881 C23.0619726,21.1818629 23.007388,21.3137911 22.8982189,21.4268724 L19.3775154,25.0737418 C19.2137618,25.2433637 19.018167,25.2810573 18.7907315,25.1868231 C18.563296,25.0925889 18.4495781,24.922967 18.4495781,24.6779576 Z" id=""></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
