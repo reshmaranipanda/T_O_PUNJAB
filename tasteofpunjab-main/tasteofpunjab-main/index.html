@@ -1747,10 +1747,18 @@
 
 						<body>
 							<section class="top-venue-section-unique"
-								style="display: flex; align-items: center; gap: 20px;">
+								style="display: flex; align-items: center; gap: 20px; padding-bottom: 70px;">
 								<div class="top-venue-content-unique" style="flex: 1;">
-									<h2 class="top-venue-title-unique">ANTARIKSH BANQUET</h2>
-									<a class="top-venue-button-unique" href="#">
+									<h2 class="top-venue-title-unique" style="
+    font-family: 'Playfair Display', 'Crimson Text', Georgia, serif;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    line-height: 1.2;
+    color: #8B6F47;
+">ANTARIKSH BANQUET</h2>
+									<a class="top-venue-button-unique expanding-lines" href="#">
 										Venue Details
 										<span></span>
 									</a>
@@ -1853,21 +1861,37 @@
 									</div>
 								</div>
 								<div class="top-venue-content-unique">
-									<h2 class="top-venue-title-unique">TASTE OF PUNJAB - VASHI</h2>
-									<a class="top-venue-button-unique" href="#">
+									<h2 class="top-venue-title-unique" style="
+    font-family: 'Playfair Display', 'Crimson Text', Georgia, serif;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    line-height: 1.2;
+    color: #8B6F47;
+">Taste of Punjab - Vashi</h2>
+									<a class="top-venue-button-unique " href="#">
 										Venue Details
-										<span>VASHI</span>
+										<!-- <span>VASHI</span> -->
 									</a>
 								</div>
 							</section>
 
 							<section class="top-venue-section-unique"
-								style="display: flex; align-items: center; gap: 20px;">
+								style="display: flex; align-items: center; gap: 20px; padding-top: 70px;">
 								<div class="top-venue-content-unique" style="flex: 1;">
-									<h2 class="top-venue-title-unique">TASTE OF PUNJAB - POWAI</h2>
-									<a class="top-venue-button-unique" href="#">
+									<h2 class="top-venue-title-unique" style="
+    font-family: 'Playfair Display', 'Crimson Text', Georgia, serif;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    line-height: 1.2;
+    color: #8B6F47;
+">Taste of Punjab - Powai</h2>
+									<a class="top-venue-button-unique href="#">
 										Venue Details
-										<span>POWAI</span>
+										<!-- <span>Powai</span> -->
 									</a>
 								</div>
 								<div class="top-carousel-container-unique" style="flex: 1;">
@@ -2023,137 +2047,212 @@
 								}
 
 								.top-venue-button-unique {
-									background: #ff6b35;
-									color: white;
+									/* background: white; */
+									color: #8B6F47;
+									border: 2px solid #8B6F47; 
 									padding: 20px 40px;
 									text-decoration: none;
-									border-radius: 25px;
-									font-weight: bold;
+									border-radius: 10px;
+									font-weight:lighter;
 									font-size: 1.2rem;
 									text-transform: uppercase;
 									letter-spacing: 1px;
 									text-align: center;
 								}
-
+                                 
 								.top-venue-button-unique span {
 									display: block;
 									font-size: 1rem;
 									margin-top: 8px;
 								}
+              
+/* RESPONSIVE DESIGN - TABLET */
+@media (max-width: 768px) {
+	.top-venue-section-unique {
+		flex-direction: column !important;
+		gap: 0 !important;
+		overflow: hidden;
+	}
 
-								/* RESPONSIVE DESIGN - TABLET */
-								@media (max-width: 768px) {
-									.top-venue-section-unique {
-										flex-direction: column !important;
-										gap: 0 !important;
-									}
+	.top-venue-section-unique[style*="gap"] {
+		gap: 0 !important;
+	}
 
-									.top-venue-section-unique[style*="gap"] {
-										gap: 0 !important;
-									}
+	.top-venue-content-unique {
+		padding: 40px 20px !important;
+		flex: none !important;
+		width: 100%;
+		box-sizing: border-box;
+	}
 
-									.top-venue-content-unique {
-										padding: 40px 20px !important;
-										flex: none !important;
-									}
+	.top-carousel-container-unique {
+		min-height: 300px;
+		max-height: 350px;
+		flex: none !important;
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+	}
 
-									.top-carousel-container-unique {
-										min-height: 300px;
-										flex: none !important;
-									}
+	.top-carousel-container-unique img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+		display: block;
+	}
 
-									.top-venue-title-unique {
-										font-size: 2rem;
-										margin-bottom: 30px;
-									}
+	.top-venue-title-unique {
+		font-size: 2rem;
+		margin-bottom: 30px;
+	}
 
-									.top-venue-button-unique {
-										padding: 15px 30px;
-										font-size: 1rem;
-									}
+	.top-venue-button-unique {
+		padding: 15px 30px;
+		font-size: 1rem;
+		display: inline-block;
+		box-sizing: border-box;
+	}
 
-									.top-carousel-nav-unique {
-										width: 40px;
-										height: 40px;
-										font-size: 16px;
-									}
+	.top-carousel-nav-unique {
+		width: 40px;
+		height: 40px;
+		font-size: 16px;
+		position: absolute;
+		z-index: 10;
+	}
 
-									.top-carousel-prev-unique {
-										left: 15px;
-									}
+	.top-carousel-prev-unique {
+		left: 15px;
+	}
 
-									.top-carousel-next-unique {
-										right: 15px;
-									}
-								}
+	.top-carousel-next-unique {
+		right: 15px;
+	}
+}
 
-								/* RESPONSIVE DESIGN - MOBILE */
-								@media (max-width: 480px) {
-									.top-venue-content-unique {
-										padding: 30px 15px !important;
-									}
+/* RESPONSIVE DESIGN - MOBILE */
+@media (max-width: 480px) {
+	.top-venue-section-unique {
+		flex-direction: column-reverse !important;
+	}
 
-									.top-carousel-container-unique {
-										min-height: 250px;
-									}
+	.top-venue-content-unique {
+		padding: 30px 15px !important;
+		width: 100%;
+		box-sizing: border-box;
+		order: 1;
+	}
 
-									.top-venue-title-unique {
-										font-size: 1.5rem;
-										margin-bottom: 20px;
-										letter-spacing: 1px;
-									}
+	.top-carousel-container-unique {
+		min-height: 250px;
+		max-height: 280px;
+		width: 100%;
+		overflow: hidden;
+		order: 2;
+	}
 
-									.top-venue-button-unique {
-										padding: 12px 25px;
-										font-size: 0.9rem;
-										border-radius: 20px;
-									}
+	.top-carousel-container-unique img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+		max-width: 100%;
+	}
 
-									.top-venue-button-unique span {
-										font-size: 0.8rem;
-										margin-top: 5px;
-									}
+	.top-venue-title-unique {
+		font-size: 1.5rem;
+		margin-bottom: 20px;
+		letter-spacing: 1px;
+		word-wrap: break-word;
+	}
 
-									.top-carousel-nav-unique {
-										width: 35px;
-										height: 35px;
-										font-size: 14px;
-									}
+	.top-venue-button-unique {
+		padding: 12px 25px;
+		font-size: 0.9rem;
+		border-radius: 20px;
+		display: inline-block;
+		max-width: 100%;
+		box-sizing: border-box;
+	}
 
-									.top-carousel-prev-unique {
-										left: 10px;
-									}
+	.top-venue-button-unique span {
+		font-size: 0.8rem;
+		margin-top: 5px;
+		display: block;
+	}
 
-									.top-carousel-next-unique {
-										right: 10px;
-									}
+	.top-carousel-nav-unique {
+		width: 35px;
+		height: 35px;
+		font-size: 14px;
+	}
 
-									.top-carousel-indicators-unique {
-										bottom: 20px;
-										gap: 8px;
-									}
+	.top-carousel-prev-unique {
+		left: 10px;
+	}
 
-									.top-carousel-indicator-unique {
-										width: 12px;
-										height: 12px;
-									}
-								}
+	.top-carousel-next-unique {
+		right: 10px;
+	}
 
-								/* VERY SMALL MOBILE */
-								@media (max-width: 320px) {
-									.top-venue-title-unique {
-										font-size: 1.2rem;
-									}
+	.top-carousel-indicators-unique {
+		bottom: 20px;
+		gap: 8px;
+		position: absolute;
+		z-index: 10;
+	}
 
-									.top-venue-button-unique {
-										padding: 10px 20px;
-										font-size: 0.8rem;
-									}
+	.top-carousel-indicator-unique {
+		width: 12px;
+		height: 12px;
+	}
+}
 
-									.top-carousel-container-unique {
-										min-height: 200px;
-									}
-								}
+/* VERY SMALL MOBILE */
+@media (max-width: 320px) {
+	.top-venue-title-unique {
+		font-size: 1.2rem;
+		word-wrap: break-word;
+		hyphens: auto;
+	}
+
+	.top-venue-button-unique {
+		padding: 10px 20px;
+		font-size: 0.8rem;
+		width: auto;
+		max-width: 100%;
+	}
+
+	.top-carousel-container-unique {
+		min-height: 200px;
+		max-height: 220px;
+		overflow: hidden;
+	}
+
+	.top-carousel-container-unique img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+}
+
+/* GENERAL IMAGE CONSTRAINTS */
+.top-carousel-container-unique * {
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+.top-carousel-container-unique {
+	position: relative;
+	overflow: hidden;
+}
+
+/* Ensure no content bleeds outside containers */
+.top-venue-section-unique * {
+	box-sizing: border-box;
+}
 							</style>
 
 							<script>
