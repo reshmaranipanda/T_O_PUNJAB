@@ -1605,9 +1605,9 @@ a:focus {
 .site-branding a,
 .site-branding img {
   display: block;
-  width: 80px;
+  width: 100px;
   height: auto;
-  max-height: 120px;
+  max-height: 140px;
   object-fit: contain;
 }
 
